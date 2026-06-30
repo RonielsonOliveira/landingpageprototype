@@ -10,7 +10,7 @@ export function Sobre() {
               Procurando mentoria para melhorar sua performace?
             </S.Greeting>
 
-            <S.Title>Comigo voce consegue resultados não promessas</S.Title>
+            <S.Title>Comigo você consegue resultados não promessas</S.Title>
 
             <S.Description>
               Confira os nossos planos <strong>escolha</strong> o que melhor se
