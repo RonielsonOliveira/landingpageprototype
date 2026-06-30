@@ -1,13 +1,6 @@
 import { JSX, useState } from 'react';
 import * as S from './styles';
-import {
-  FaLinkedin,
-  FaGithub,
-  FaBars,
-  FaTimes,
-  FaInstagram,
-  FaWhatsapp,
-} from 'react-icons/fa';
+import { FaBars, FaTimes, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { ThemeToggle } from '../ThemeToggle/ThemeToggle';
 
 export function Menu(): JSX.Element {
@@ -28,8 +21,8 @@ export function Menu(): JSX.Element {
           <S.NavGroup>
             <S.MenuLink href="#inicio">Inicio</S.MenuLink>
             <S.MenuLink href="#sobre">Sobre</S.MenuLink>
-            <S.MenuLink href="#projetos">Projetos</S.MenuLink>
-            <S.MenuLink href="#experiencia"> Experiência</S.MenuLink>
+            <S.MenuLink href="#planos">Planos</S.MenuLink>
+            <S.MenuLink href="#beneficios">Beneficios</S.MenuLink>
             <ThemeToggle />
           </S.NavGroup>
         </S.MenuGroup>
@@ -52,21 +45,21 @@ export function Menu(): JSX.Element {
             <S.MenuLink href="#sobre" onClick={() => setIsOpen(false)}>
               Sobre
             </S.MenuLink>
-            <S.MenuLink href="#projetos" onClick={() => setIsOpen(false)}>
-              Projetos
+            <S.MenuLink href="#planos" onClick={() => setIsOpen(false)}>
+              Planos
             </S.MenuLink>
-            <S.MenuLink href="#experiencia" onClick={() => setIsOpen(false)}>
-              Experiência
+            <S.MenuLink href="#beneficios" onClick={() => setIsOpen(false)}>
+              Beneficios
             </S.MenuLink>
           </S.NavGroup>
 
           <S.SocialGroup>
             <S.LinkedinLink href="https://www.linkedin.com/in/ronielsonoliveira">
-              <FaLinkedin size={32} />
+              <FaInstagram size={32} />
             </S.LinkedinLink>
 
             <S.GithubLink href="https://github.com/RonielsonOliveira">
-              <FaGithub size={32} />
+              <FaWhatsapp size={32} />
             </S.GithubLink>
           </S.SocialGroup>
         </S.MenuNav>

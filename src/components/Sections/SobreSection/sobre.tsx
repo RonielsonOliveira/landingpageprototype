@@ -14,8 +14,7 @@ export function Sobre() {
 
             <S.Description>
               Confira os nossos planos <strong>escolha</strong> o que melhor se
-              adeque ao seu orçamento e entre em contato para termos uma
-              corversa melhor.
+              adeque ao seu orçamento e entre em contato.
             </S.Description>
           </S.Content>
         </S.Intro>
