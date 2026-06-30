@@ -11,10 +11,10 @@ export function Menu(): JSX.Element {
       <S.Wrapper>
         <S.MenuGroup>
           <S.SocialGroup>
-            <S.LinkedinLink href="https://www.linkedin.com/in/ronielsonoliveira">
+            <S.LinkedinLink href="#">
               <FaInstagram size={28} />
             </S.LinkedinLink>
-            <S.GithubLink href="https://github.com/RonielsonOliveira">
+            <S.GithubLink href="#">
               <FaWhatsapp size={28} />
             </S.GithubLink>
           </S.SocialGroup>
@@ -54,11 +54,11 @@ export function Menu(): JSX.Element {
           </S.NavGroup>
 
           <S.SocialGroup>
-            <S.LinkedinLink href="https://www.linkedin.com/in/ronielsonoliveira">
+            <S.LinkedinLink href="#">
               <FaInstagram size={32} />
             </S.LinkedinLink>
 
-            <S.GithubLink href="https://github.com/RonielsonOliveira">
+            <S.GithubLink href="#">
               <FaWhatsapp size={32} />
             </S.GithubLink>
           </S.SocialGroup>
