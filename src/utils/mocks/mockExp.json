@@ -1,0 +1,46 @@
+[
+  {
+    "nome": "Plano Essencial",
+    "preco": "R$ 79/mês",
+    "badge": "",
+    "descricao": "Ideal para quem está iniciando na academia e deseja um treino personalizado com acompanhamento profissional.",
+    "atendimento": "100% Online • Atendimento para todo o Brasil",
+    "recursos": [
+      "Ficha de treino personalizada",
+      "Avaliação inicial",
+      "Atualização mensal",
+      "Suporte via WhatsApp",
+      "Vídeos explicativos dos exercícios"
+    ]
+  },
+  {
+    "nome": "Plano Performance",
+    "preco": "R$ 149/mês",
+    "badge": "MAIS ESCOLHIDO",
+    "descricao": "Acompanhamento completo para quem deseja acelerar os resultados com ajustes frequentes e suporte contínuo.",
+    "atendimento": "100% Online • Atendimento para todo o Brasil",
+    "recursos": [
+      "Tudo do Plano Essencial",
+      "Atualização quinzenal",
+      "Correção de exercícios por vídeo",
+      "Consultoria via WhatsApp",
+      "Planejamento de progressão de cargas",
+      "Treinos para hipertrofia ou emagrecimento"
+    ]
+  },
+  {
+    "nome": "Plano Premium",
+    "preco": "R$ 249/mês",
+    "badge": "VIP",
+    "descricao": "Acompanhamento individual para quem busca máxima evolução com suporte prioritário.",
+    "atendimento": "100% Online • Atendimento para todo o Brasil",
+    "recursos": [
+      "Tudo do Plano Performance",
+      "Atualização semanal",
+      "Consultoria ilimitada",
+      "Planejamento completo de treinos",
+      "Análise da evolução",
+      "Atendimento prioritário"
+    ]
+  }
+]

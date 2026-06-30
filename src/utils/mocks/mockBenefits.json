@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Treino Personalizado",
+    "iconName": "Workout",
+    "description": "Treinos desenvolvidos conforme seu objetivo."
+  },
+  {
+    "title": "Avaliação Inicial",
+    "iconName": "Target",
+    "description": "Análise completa para definir sua estratégia."
+  },
+  {
+    "title": "Atualização dos Treinos",
+    "iconName": "Progress",
+    "description": "Seu treino evolui junto com seus resultados."
+  },
+  {
+    "title": "Suporte via WhatsApp",
+    "iconName": "Whatsapp",
+    "description": "Contato rápido para tirar dúvidas."
+  },
+  {
+    "title": "Correção de Exercícios",
+    "iconName": "Video",
+    "description": "Envie vídeos para análise da execução."
+  },
+  {
+    "title": "Hipertrofia",
+    "iconName": "Fire",
+    "description": "Treinos focados em ganho de massa muscular."
+  },
+  {
+    "title": "Emagrecimento",
+    "iconName": "Running",
+    "description": "Estratégias para perda de gordura."
+  },
+  {
+    "title": "Acompanhamento Mensal",
+    "iconName": "Calendar",
+    "description": "Ajustes constantes para manter sua evolução."
+  },
+  {
+    "title": "Resultados Reais",
+    "iconName": "Medal",
+    "description": "Metodologia voltada para evolução contínua."
+  },
+  {
+    "title": "Saúde e Qualidade de Vida",
+    "iconName": "Health",
+    "description": "Muito além da estética, treine para viver melhor."
+  },
+  {
+    "title": "Atendimento Nacional",
+    "iconName": "World",
+    "description": "Acompanhamento 100% online para todo o Brasil."
+  },
+  {
+    "title": "Ficha de Treino",
+    "iconName": "Clipboard",
+    "description": "Treinos organizados e personalizados para você."
+  }
+]
