@@ -18,6 +18,7 @@ export function Menu(): JSX.Element {
               <FaWhatsapp size={28} />
             </S.GithubLink>
           </S.SocialGroup>
+          <S.MenuLink>Robson Logo</S.MenuLink>
           <S.NavGroup>
             <S.MenuLink href="#inicio">Inicio</S.MenuLink>
             <S.MenuLink href="#sobre">Sobre</S.MenuLink>
@@ -28,6 +29,8 @@ export function Menu(): JSX.Element {
         </S.MenuGroup>
         <S.MobileIcon>
           <FaBars size={28} onClick={() => setIsOpen(true)} />
+          <S.MenuLink>Robson Logo</S.MenuLink>
+
           <ThemeToggle />
         </S.MobileIcon>
       </S.Wrapper>

@@ -1,137 +1,119 @@
 import styled from 'styled-components';
-
 import media from 'styled-media-query';
 
 export const Container = styled.div`
-  width: min(1200px, 100%);
-  margin: 50px auto;
+  width: min(1200px, 95%);
+  margin: 60px auto;
 
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 
-  ${media.lessThan('medium')`
-      width:90%;
-      flex-direction:column;
+  ${media.lessThan('large')`
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
   `}
-`;
-
-export const PlanList = styled.div`
-  width: 290px;
-
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
 
   ${media.lessThan('medium')`
-      width:100%;
+    grid-template-columns: 1fr;
+    width: 95%;
   `}
 `;
 
 type CardProps = {
-  $active: boolean;
+  $featured?: boolean;
 };
 
-export const PlanCard = styled.button<CardProps>`
+export const PlanCard = styled.div<CardProps>`
   position: relative;
 
-  border: none;
+  display: flex;
+  flex-direction: column;
 
-  cursor: pointer;
+  height: 850px;
+  padding: 35px;
 
-  border-radius: 12px;
-
-  padding: 25px;
-
-  text-align: left;
-
-  transition: 0.3s;
-
-  background: ${({ theme, $active }) =>
-    $active ? theme.colors.line : theme.colors.card};
-
-  color: ${({ theme, $active }) =>
-    $active ? theme.colors.black : theme.colors.text};
-
-  border: 1px solid
-    ${({ theme, $active }) =>
-      $active ? theme.colors.line : theme.colors.border};
-
-  h3 {
-    margin-bottom: 10px;
-    font-size: 24px;
-  }
-
-  span {
-    font-size: 28px;
-    font-weight: bold;
-  }
-
-  &:hover {
-    transform: translateX(6px);
-  }
-`;
-
-export const Badge = styled.div`
-  position: absolute;
-
-  right: 15px;
-  top: 15px;
-
-  padding: 5px 10px;
-
-  border-radius: 30px;
-
-  font-size: 11px;
-
-  font-weight: bold;
-
-  background: #ff4040;
-
-  color: white;
-`;
-
-export const PlanInfo = styled.div`
-  flex: 1;
-
-  padding: 40px;
-
-  border-radius: 15px;
+  border-radius: 18px;
 
   background: ${({ theme }) => theme.colors.card};
 
-  display: flex;
+  border: 2px solid
+    ${({ $featured, theme }) =>
+      $featured ? theme.colors.line : theme.colors.border};
 
-  flex-direction: column;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+  &:hover {
+    border-color: ${({ theme }) => theme.colors.line};
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+  }
+
+  ${media.lessThan('large')`
+    height: 620px;
+  `}
+
+  ${media.lessThan('medium')`
+    height: auto;
+    min-height: 600px;
+  `}
 `;
+export const Badge = styled.div`
+  position: absolute;
+  top: -15px;
+  left: 50%;
 
+  transform: translateX(-50%);
+
+  background: ${({ theme }) => theme.colors.line};
+  color: ${({ theme }) => theme.colors.white};
+
+  padding: 8px 18px;
+  border-radius: 999px;
+
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+  z-index: 2;
+  white-space: nowrap;
+
+  ${media.lessThan('medium')`
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    padding: 6px 14px;
+  `}
+`;
 export const Header = styled.div`
-  display: flex;
-
-  justify-content: space-between;
+  text-align: center;
 
   padding-bottom: 25px;
 
   border-bottom: 1px solid ${({ theme }) => theme.colors.border};
 
   h2 {
-    font-size: 34px;
-
+    font-size: 30px;
     color: ${({ theme }) => theme.colors.text};
+    margin-bottom: 15px;
   }
 
   h1 {
-    margin-top: 8px;
-
-    font-size: 42px;
-
+    font-size: 44px;
     color: ${({ theme }) => theme.colors.line};
   }
 `;
 
 export const Description = styled.p`
-  margin: 35px 0;
+  margin: 30px 0;
 
   line-height: 1.8;
+
+  text-align: center;
 
   color: ${({ theme }) => theme.colors.text};
 `;
@@ -139,77 +121,98 @@ export const Description = styled.p`
 export const Features = styled.ul`
   list-style: none;
 
-  display: grid;
+  display: flex;
+  flex-direction: column;
 
-  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
 
-  gap: 18px;
-
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 
   li {
-    font-size: 17px;
-
     color: ${({ theme }) => theme.colors.text};
+    font-size: 16px;
   }
-
-  ${media.lessThan('medium')`
-
-grid-template-columns:1fr;
-
-`}
 `;
 
 export const Footer = styled.div`
   margin-top: auto;
 
   display: flex;
-
-  justify-content: space-between;
-
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
 
   gap: 20px;
 
+  h4 {
+    text-align: center;
+    color: ${({ theme }) => theme.colors.text};
+    font-size: 16px;
+  }
+`;
+export const DesktopContainer = styled.div`
+  width: min(1200px, 95%);
+  margin: 60px auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+  ${media.lessThan('large')`
+    grid-template-columns:repeat(2,1fr);
+  `}
+
   ${media.lessThan('medium')`
-
-flex-direction:column;
-
-align-items:flex-start;
-
-`}
+    display:none;
+  `}
 `;
 
-export const Button = styled.button`
-  width: 260px;
+export const MobileContainer = styled.div`
+  display: none;
 
-  height: 58px;
+  width: 90%;
+  margin: 40px auto;
 
-  border: none;
+  .swiper {
+    padding-bottom: 45px;
+  }
 
-  cursor: pointer;
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
 
-  border-radius: 8px;
+  .swiper-pagination-bullet {
+    background: ${({ theme }) => theme.colors.text};
+    opacity: 0.4;
+  }
 
-  font-size: 18px;
-
-  font-weight: bold;
-
-  transition: 0.3s;
-
-  background: ${({ theme }) => theme.colors.line};
-
-  color: ${({ theme }) => theme.colors.black};
-
-  &:hover {
-    opacity: 0.9;
-
-    transform: translateY(-2px);
+  .swiper-pagination-bullet-active {
+    background: ${({ theme }) => theme.colors.line};
+    opacity: 1;
   }
 
   ${media.lessThan('medium')`
+    display: block;
+  `}
+`;
+export const Button = styled.button`
+  width: 100%;
+  height: 55px;
 
-width:100%;
+  border: none;
+  border-radius: 10px;
 
-`}
+  cursor: pointer;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  background: ${({ theme }) => theme.colors.line};
+  color: ${({ theme }) => theme.colors.white};
+
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.9;
+  }
 `;
